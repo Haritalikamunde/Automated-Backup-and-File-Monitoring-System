@@ -43,7 +43,7 @@ def makeLogFile(files,zip_file,Stime):
     
     timestamp=time.strftime("%Y-%m-%d_%H_%M_%S")
     
-    FileName=os.path.join(LogFolder,"Marvellous_%s.log" %timestamp)
+    FileName=os.path.join(LogFolder,"Info_%s.log" %timestamp)
     print("Log file gets created with name :",FileName)
 
     fobj=open(FileName,'w')
@@ -134,11 +134,11 @@ def DataShield(Source="Data"):
 
     body=makeLogFile(files,zip_file, Stime)
 
-    sender_mail="hpmunde20@gmail.com"
+    sender_mail="abc@gmail.com"
     
-    password="umfjefduhgjcbfhc"
+    password="umfjehgjcbfhc"
 
-    reciver_mail="2019munde@gmail.com"
+    reciver_mail="abc@gmail.com"
 
     subject="Backup files Details"
 
@@ -159,7 +159,7 @@ def main():
 
     Border="-"*50
     print(Border)
-    print("----- Marvellous Data Shield System-----")
+    print("-----   Data Shield System-----")
     print(Border)
 
     if(len(sys.argv)==2):
